@@ -17,5 +17,5 @@ if __name__ == "__main__":
             print("unclean jsonline: ")
             print(line)
         if "source_id" in jline and  "record_id" in jline:
-                jline["id"] = ( args.prefix + jline["source_id"] + "-" + str(base64.urlsafe_b64encode(bytes(jline["record_id"],'utf-8')).decode('utf-8')).rstrip('='))
+                jline["id"] = ( args.prefix + "-" + jline["source_id"] + "-" + str(base64.urlsafe_b64encode(bytes(jline["record_id"],'utf-8')).decode('utf-8')).rstrip('='))
                 sys.stdout.write(json.dumps(jline,indent=None)+"\n")
