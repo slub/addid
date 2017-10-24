@@ -7,7 +7,7 @@ import base64
 
 if __name__ == "__main__":
     parser=argparse.ArgumentParser(description='create new id field out of source_id and record_id, encode source_id to base64 too')
-    parser.add_argument('-prefix',type=str,default="dswarm-",help='set prefix for new id-field.')
+    parser.add_argument('-prefix',type=str,default="dswarm",help='set prefix for new id-field.')
     args=parser.parse_args()
     
     for line in sys.stdin:
