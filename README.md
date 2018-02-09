@@ -12,7 +12,7 @@ adds "id" field to given finc Solr schema conform line delimited JSON, whereby t
 
 ## requirements
 
-[argparse](https://docs.python.org/3/library/argparse.html#module-argparse)
+* [argparse](https://docs.python.org/3/library/argparse.html#module-argparse)
 
 ### install requirements
 
